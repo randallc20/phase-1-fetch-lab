@@ -1,5 +1,10 @@
 function fetchBooks() {
   // To pass the tests, don't forget to return your fetch!
+  //why do I need the /books
+  //I tried https://anapioficeandfire.com/api/characters/583
+  return fetch("https://anapioficeandfire.com/api/books")
+  .then(resp => resp.json())
+  .then(json => renderBooks(json))
   
 }
 
